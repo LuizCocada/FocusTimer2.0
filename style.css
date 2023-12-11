@@ -1,0 +1,110 @@
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+    --primary-color:hsla(240, 6%, 21%, 1);
+    --controls-bg-color:hsla(194, 97%, 31%, 1);
+    --bg-controlsSounds-hover:rgb(129, 217, 244);
+    --bg-controlsSounds:hsla(240, 9%, 89%, 1);
+}
+
+
+body{
+    font-size: 1.6rem;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer{
+    margin-bottom: 1.7rem;
+    font-size: 12.6rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
+}
+
+#controls button{
+    background: none;
+    border: none;
+    font-size: 4.8rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#controlsSounds{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#controlsSounds button{
+    margin-top: 3rem;
+    border: none;
+    cursor: pointer;
+    font-size: 4.8rem;
+    border-radius: .8rem;
+    padding: 3rem 2rem;
+}
+
+#controls .secondary{
+   color: var(--controls-bg-color);
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle{
+    display: none;
+}
+
+.musicOn{
+    background-color: var(--controls-bg-color);
+}
+
+/* html:not(.musicOn) #controlsSounds button{
+    background-color: var(--bg-controlsSounds);
+} */
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

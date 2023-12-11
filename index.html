@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="src/main.js" type="module" defer></script>
+</head>
+<body>
+        <main>
+            <section id="timer">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+
+            <section id="controls" >
+                <button data-action="toggleRunning" 
+                class="ph ph-play-circle"></button>
+                
+                <button data-action="toggleRunning" 
+                 class="ph ph-pause-circle"></button>
+                 
+                <button data-action="set" 
+                 class="ph ph-timer"></button>
+
+                <button data-action="reset" 
+                 class="ph ph-stop-circle"></button>
+
+                <button data-action="up" 
+                 class="ph ph-plus-circle secondary"></button>
+
+                <button data-action="low" 
+                 class="ph ph-minus-circle secondary"></button>
+            </section>
+        </main>
+        
+        <section id="controlsSounds">
+            <button data-music="forest"
+            id="forest"
+             class="ph ph-tree buttonMusic">
+            </button>
+
+            <button data-music="rain"
+            id="rain"
+             class="ph ph-cloud-rain buttonMusic">
+            </button>
+
+            <button data-music="coffe"
+            id="coffe"
+            class="ph ph-storefront buttonMusic">
+            </button>
+
+            <button data-music="fire"
+            id="fire" 
+            class="ph ph-fire buttonMusic">
+            </button>
+        </section>
+        
+</body>
+</html>
